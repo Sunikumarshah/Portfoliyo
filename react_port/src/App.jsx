@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import components
+import Hero from "./components/Hero";
+import Navbar from "./Layouts/Navbar";
+import Skills from "./components/Skills";
+import Service from "./components/Services";
+import Projects from "./components/Projects";
+import Testimonials from "./components/Testimonials";
+import Hireme from "./components/Hireme";
+import Contact from "./components/Contact";
+import { useEffect } from "react";
+// Animation package
+import Aos from "aos";
+import "aos/dist/aos.css";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1800,
+      offset: 100,
+      disable: "mobile",
+    });
+  }, []);
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="">
+      <Navbar />
+      <Hero />
+      <Skills />
+      <Service />
+      <Projects />
+      <Testimonials />
+      <Hireme />
+      <Contact />
+      <footer className="p-3 text-center">
+        <h6 className="mb-3">JOHN ALEX</h6>
+        <p>codeaprogram © All CopyRights Reserved 2022</p>
+      </footer>
+    </div>
+  );
+};
 
-export default App
+export default App;
