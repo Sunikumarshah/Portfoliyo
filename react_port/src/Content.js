@@ -7,6 +7,20 @@ import Canva from "./assets/images/Skills/Canva.png";
 import reactjs from "./assets/images/Skills/react.png";
 import java from "./assets/images/Skills/java.png";
 import python from "./assets/images/Skills/python.png";
+import Cpp from "./assets/images/Skills/Cpp.png";
+import Html from "./assets/images/Skills/Html.png";
+import Css from "./assets/images/Skills/Css.png";
+import JavaScript from "./assets/images/Skills/JavaScript.png";
+import Bootstrap from "./assets/images/Skills/Bootstape.png";
+import Mysql from "./assets/images/Skills/Mysql.png";
+
+
+
+import Resume from "./assets/resume/Sunil.pdf";
+
+
+
+
 
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
@@ -28,7 +42,7 @@ import Hireme_person2 from "./assets/images/Hireme/person2.png";
 // import icons from react-icons
 import { GrMail } from "react-icons/gr";
 import { MdArrowForward, MdCall } from "react-icons/md";
-import { BsInstagram } from "react-icons/bs";
+import { BsBootstrap, BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
 import { TbSmartHome } from "react-icons/tb";
 import { BiUser } from "react-icons/bi";
 import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
@@ -58,15 +72,15 @@ export const content = {
     },
   ],
   hero: {
-    title: "Python Full Stack Developer",
+    title: "Full Stack Developer",
     firstName: "Sunil",
     LastName: "Shah",
     btnText: "Hire Me",
     image: Hero_person,
     hero_content: [
       {
-        count: "Freshers",
-        text: "Years of Experinse in Web development",
+        count: "6+",
+        text: "Month of Experinse in Full stack development",
       },
       {
         count: "5+",
@@ -99,15 +113,47 @@ export const content = {
         logo: python,
       },
       {
-        name: "Canva",
-        para: "Lorem ipsum text  dummy",
-        logo: Canva,
-      },
-      
-      {
         name: "Git",
         para: "Lorem ipsum text  dummy",
         logo: git,
+      },
+      
+      
+      
+      {
+        name: "Cpp",
+        para: "Lorem ipsum text  dummy",
+        logo: Cpp,
+      },
+      {
+        name: "Html",
+        para: "Lorem ipsum text  dummy",
+        logo: Html,
+      },
+      {
+        name: "Css",
+        para: "Lorem ipsum text  dummy",
+        logo: Css,
+      },
+      {
+        name: "JavaScript",
+        para: "Lorem ipsum text  dummy",
+        logo: JavaScript,
+      },
+      {
+        name: "Bootstrape",
+        para: "Lorem ipsum text  dummy",
+        logo: Bootstrap,
+      },
+      {
+        name: "MySql",
+        para: "Lorem ipsum text  dummy",
+        logo: Mysql,
+      },
+      {
+        name: "Canva",
+        para: "Lorem ipsum text  dummy",
+        logo: Canva,
       },
       
     ],
@@ -118,7 +164,7 @@ export const content = {
     subtitle: "WHAT I OFFER",
     service_content: [
       {
-        title: "Web Development",
+        title: "Full Stack Development",
         para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
         logo: services_logo1,
       },
@@ -161,19 +207,19 @@ export const content = {
         review:
           "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
         img: avatar1,
-        name: "JOHN DOE",
+        name: "Sunil shah",
       },
       {
         review:
           "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
         img: avatar2,
-        name: "Tom Alex",
+        name: "Subhash Kewat",
       },
       {
         review:
           "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
         img: avatar3,
-        name: "Johnny",
+        name: "Abhishek",
       },
       {
         review:
@@ -189,27 +235,38 @@ export const content = {
     image1: Hireme_person,
     image2: Hireme_person2,
     para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+    Resume:"./assets/resume/Sunil.pdf",
     btnText: "Hire Me",
   },
   Contact: {
     title: "Contect Me",
     subtitle: "GET IN TOUCH",
     social_media: [
-      {
-        text: "shahsunilkumar373@gmail.com",
-        icon: GrMail,
-        link: "mailto:shahsunilkumar373@gmail.com",
-      },
-      {
-        text: "+91 9926 398581",
-        icon: MdCall,
-        link: "https://wa.me/1234567890",
-      },
-      {
-        text: "Its_sunilshah07",
-        icon: BsInstagram,
-        link: "https://www.instagram.com/its_sunilshah_07",
-      },
+        {
+          text: "Email",
+          icon: GrMail,
+          link: "mailto:shahsunilkumar373@gmail.com",
+        },
+        {
+          text: "Call me",
+          icon: MdCall,
+          link: "https://wa.me/+91 9926 398581",
+        },
+        {
+          text: "Instagram",
+          icon: BsInstagram,
+          link: "https://www.instagram.com/its_sunilshah_07",
+        },
+        {
+          text: "Github",
+          icon: BsGithub,
+          link: "https://github.com/Sunikumarshah",
+        },
+        {
+          text: "Linkdin",
+          icon: BsLinkedin,
+          link: "https://www.linkedin.com/in/sunil-shah07/",
+        },
     ],
   },
   Footer: {
